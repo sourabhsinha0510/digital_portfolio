@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sourabh Sinha | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" type="image/x-icon" href="images/fav.jpeg">
+</head>
+<style>
+  header { 
+  position: sticky; 
+  top: 0; 
+  z-index: 50; 
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Keep natural order */
+  flex-wrap: nowrap;           /* Force single row */
+  width: 100%;
+  padding: 14px min(4vw, 36px);
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  box-sizing: border-box;
+  overflow-x: auto;            /* Allow horizontal scroll */
+  scrollbar-width: none;       /* Hide scrollbar in Firefox */
+}
+
+.navbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome/Edge/Safari */
+}
+
+
+.nav-links { 
+    display: flex;
+    gap: clamp(8px, 2vw, 22px); /* reduce spacing automatically */
+  align-items: center;
+  flex-shrink: 0;              /* critical: never collapse */
+  overflow-x: auto;            /* scroll if needed */
+  white-space: nowrap;         /* keep all in one row */
+  margin: 0 10px;              /* spacing between logo & toggle */
+  padding: 0;
+  list-style: none;
+  scrollbar-width: none;       /* Prevent links touching edges */
+}
+
+.nav-links a {
+  color: var(--muted); 
+  border-bottom: 2px solid transparent;
+  transition: color .2s, border-color .2s;
+  white-space: nowrap;         /* Keep each link on one line */
+  flex-shrink: 0;
+  font-size: clamp(12px, 1.5vw, 16px);  /* shrink on small screens */
+  padding: 6px 0;
+}
+
+.nav-links a:hover, 
+.nav-links a.active { 
+  color: var(--accent); 
+  border-color: var(--accent); 
+}
+
+#themeToggle { 
+  cursor: pointer; 
+  user-select: none; 
+  font-size: 1.1rem; 
+  flex-shrink: 0;
+  margin-left: auto; /* Push toggle to the far right */
+}
+</style>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+     <div id="themeToggle">
+     <button id="theme-toggle" aria-label="Toggle Theme">
+  <img src="https://cdn.jsdelivr.net/npm/lucide-static/icons/sun.svg">
+</button>
+
+     </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span class="highlight">Sourabh Sinha</span></h1>
+      <h2 ><span class="typewriter">Software & Web Developer</span></h2>
+    </div>
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="Sourabh Sinha">
+    </div>
+    <div class="about">
+      <h1>About Me</h1>
+      <p>
+        I am a software and web developer specializing in secure, high-performance, and scalable applications. My expertise lies in Java development, full-stack web technologies, and cybersecurity-focused solutions, enabling me to deliver robust systems that meet both user needs and industry standards.
+        
+        With a strong foundation in backend engineering, API development, and modern frontend frameworks, I focus on building applications that are not only functional but also optimized for performance, security, and maintainability. I am passionate about leveraging emerging technologies to solve complex problems, enhance digital security, and create seamless user experiences.
+        
+        My work reflects a commitment to clean architecture, efficient code practices, and continuous learning, ensuring that every solution I build is both future-ready and reliable.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sourabh Sinha. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/scrollReveal.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

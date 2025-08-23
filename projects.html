@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Sourabh Sinha</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="icon" type="image/x-icon" href="images/fav.jpeg">
+</head>
+<style>
+ /* Navbar */
+header { 
+  position: sticky; 
+  top: 0; 
+  z-index: 50; 
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Keep natural order */
+  flex-wrap: nowrap;           /* Force single row */
+  width: 100%;
+  padding: 14px min(4vw, 36px);
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  box-sizing: border-box;
+  overflow-x: auto;            /* Allow horizontal scroll */
+  scrollbar-width: none;       /* Hide scrollbar in Firefox */
+}
+
+.navbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome/Edge/Safari */
+}
+
+
+.nav-links { 
+    display: flex;
+    gap: clamp(8px, 2vw, 22px); /* reduce spacing automatically */
+  align-items: center;
+  flex-shrink: 0;              /* critical: never collapse */
+  overflow-x: auto;            /* scroll if needed */
+  white-space: nowrap;         /* keep all in one row */
+  margin: 0 10px;              /* spacing between logo & toggle */
+  padding: 0;
+  list-style: none;
+  scrollbar-width: none;       /* Prevent links touching edges */
+}
+
+.nav-links a {
+  color: var(--muted); 
+  border-bottom: 2px solid transparent;
+  transition: color .2s, border-color .2s;
+  white-space: nowrap;         /* Keep each link on one line */
+  flex-shrink: 0;
+  font-size: clamp(12px, 1.5vw, 16px);  /* shrink on small screens */
+  padding: 6px 0;
+}
+
+.nav-links a:hover, 
+.nav-links a.active { 
+  color: var(--accent); 
+  border-color: var(--accent); 
+}
+
+#themeToggle { 
+  cursor: pointer; 
+  user-select: none; 
+  font-size: 1.1rem; 
+  flex-shrink: 0;
+  margin-left: auto; /* Push toggle to the far right */
+}
+
+</style>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div id="themeToggle">
+        <button id="theme-toggle" aria-label="Toggle Theme">
+  <img src="https://cdn.jsdelivr.net/npm/lucide-static/icons/sun.svg">
+      </div>
+    </nav>
+  </header>
+
+  <section class="projects">
+    <h1>Projects & Internships</h1>
+    <br>
+    <h1>My Projects</h1>
+  <div class="project-list">
+    <!-- Project 1 -->
+<a href="https://image-segmentation-km1o.onrender.com/" target="_blank" class="project-card">
+  <div class="project-image">
+    <img src="images/gp.jpg" alt="Graphical Password System Screenshot">
+  </div>
+  <div class="project-info">
+    <h4>Graphical Password System</h4>
+    <p>Secure login system using image segmentation.</p>
+  </div>
+</a>
+
+    <!-- Project 2 -->
+<a href="https://github.com/sourabhsinha0510/androidportfolio" target="_blank" class="project-card">
+  <div class="project-image">
+    <img src="images/port.jpg" alt="Portfolio Android App Screenshot">
+  </div>
+  <div class="project-info">
+    <h4>Portfolio Android App</h4>
+    <p>Android app showcasing my skills and projects.</p>
+  </div>
+</a>
+
+<!-- Project 3 -->
+<a href="https://sourabhsinha0510.github.io/Prodigy_WD_05/" target="_blank" class="project-card">
+  <div class="project-image">
+    <img src="images/forecast.jpg" alt="Weather Forecast App Screenshot">
+  </div>
+  <div class="project-info">
+    <h4>Weather Forecast Web App</h4>
+    <p>Real-time weather forecast application using API integration.</p>
+  </div>
+</a>
+
+<!-- Project 4 -->
+<a href="https://github.com/sourabhsinha0510/android_studentdatabase" target="_blank" class="project-card">
+  <div class="project-image">
+    <img src="images/db.jpg" alt="Student Database App Screenshot">
+  </div>
+  <div class="project-info">
+    <h4>Student Database App</h4>
+    <p>Android-based student management system with database integration.</p>
+  </div>
+</a>
+
+<!-- Project 5 -->
+<a href="https://github.com/sourabhsinha0510/javanhms" target="_blank" class="project-card">
+  <div class="project-image">
+    <img src="images/nur.jpg" alt="Nursing Home Management System Screenshot">
+  </div>
+  <div class="project-info">
+    <h4>Nursing Home Management System</h4>
+    <p>DBMS-based healthcare management software with Java and MySQL.</p>
+  </div>
+</a>
+
+<!-- Project 6 -->
+<a href="https://quickfixcare.onrender.com/" target="_blank" class="project-card">
+  <div class="project-image">
+    <img src="images/quick.jpg" alt="QuickFix Care Screenshot">
+  </div>
+  <div class="project-info">
+    <h4>QuickFix Care</h4>
+    <p>A service-based website for home appliances using API integration.</p>
+  </div>
+</a>
+
+<!-- Project 7 -->
+<a href="https://github.com/sourabhsinha0510/gesture_recoginitionsystem" target="_blank" class="project-card">
+  <div class="project-image">
+    <img src="images/gesture.png" alt="Hand Gesture Recognition System Screenshot">
+  </div>
+  <div class="project-info">
+    <h4>Hand Gesture Recognition System</h4>
+    <p>Machine learning-based hand gesture recognition using Python.</p>
+  </div>
+</a>
+
+  </div>
+<br> 
+<h1>My Publication </h1>
+<div class="project-list">
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4997226" target="_blank" class="project-card">
+  <div class="project-image">
+    <img src="images/pub.jpg" alt="Publication">
+  </div>
+  <div class="project-info">
+    <h4>Cojugation Of Graphical Password By Image Segmentation</h4>
+    <p>Research Paper based on Working of Graphical Password</p>
+  </div>
+</a>
+</div>
+<br>
+    <h1>My Internships</h1>
+
+    <div class="project-list">
+       <div class="project-card">
+        <div class="project-image">
+    <img src="images/prodigy.jpeg" alt="Publication">
+  </div>
+  <div class="project-info">
+    <h4>Prodigy Infotech - Web Development Intern</h4>
+    <p>Developed and maintained responsive web applications using modern web technologies</p>
+  </div>
+       </div> 
+
+    <div class="project-card">
+    <div class="project-image">
+    <img src="images/tcs.png" alt="intern">
+  </div>
+  <div class="project-info">
+    <h4>TATA Consultancy Services - Cyber Security Analyst Intern</h4>
+    <p>Assisted in analyzing and enhancing Identity and Access Management (IAM) systems</p>
+  </div>
+       </div> 
+       
+  <div class="project-card"><div class="project-image">
+    <img src="images/tata.png" alt="intern">
+  </div>
+  <div class="project-info">
+    <h4>TATA Steel Utilities & Infrastructure Service Ltd - Data Management Intern</h4>
+    <p>Managed and maintained large datasets using SQL Server</p>
+  </div></div> 
+
+
+
+       <div class="project-card">
+        <div class="project-image">
+    <img src="images/iact.png" alt="Publication">
+  </div>
+  <div class="project-info">
+    <h4>International Academy of Computer Training (IACT) - Software Developer Intern</h4>
+    <p>Designed and developed a Nursing Home Management System using Java and database
+       technologies</p>
+  </div>
+       </div> 
+      </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sourabh Sinha. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/scrollReveal.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

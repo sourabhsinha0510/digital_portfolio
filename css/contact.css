@@ -1,0 +1,27 @@
+/* Contact Page */
+.contact{
+  width: min(760px, 92%);
+  margin: 80px auto;
+  text-align: center;
+}
+.contact h1{ margin-bottom: 10px; }
+.contact p{ color: var(--muted); margin-bottom: 24px; }
+
+#contactForm{
+  display:flex; flex-direction:column; gap: 16px;
+  background: var(--card); border:1px solid var(--border); border-radius: 16px;
+  padding: 18px; box-shadow: var(--shadow);
+}
+#contactForm input, #contactForm textarea{
+  background: transparent; color: var(--text);
+  border: 1px solid var(--border); border-radius: 10px;
+  padding: 12px 14px; font-size: 1rem; outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+#contactForm input:focus, #contactForm textarea:focus{
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(100,255,218,.15);
+}
+#contactForm button{ align-self: center; }
+
+/* Footer (inherits global) — already styled in style.css */

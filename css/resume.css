@@ -1,0 +1,14 @@
+/* Resume Page */
+.resume{
+  width: min(900px, 92%);
+  margin: 80px auto;
+  text-align: center;
+}
+.resume .actions{ margin: 20px 0 28px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+.resume .viewer{
+  background: var(--card); border:1px solid var(--border); border-radius: 14px;
+  padding: 10px; box-shadow: var(--shadow);
+}
+.resume .viewer iframe{
+  width: 100%; height: 70vh; border: 0; border-radius: 10px;
+}
